@@ -1,11 +1,13 @@
-<template><input type="text" v-model="foo" /></template>
+<template>
+  <Foo tag="h2" />
+</template>
 
 <script>
+import Foo from "./components/Foo";
+
 export default {
-  data() {
-    return {
-      foo: "hello world",
-    };
+  components: {
+    Foo,
   },
 };
 </script>
