@@ -1,4 +1,4 @@
-<template> <input type="text" v-model="foo" /> </template>
+<template><input type="text" v-model="foo" /></template>
 
 <script>
 export default {

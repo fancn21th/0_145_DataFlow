@@ -1,0 +1,14 @@
+{
+  "name": "vue-prototype",
+  "version": "1.0.0",
+  "description": "TBD",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "vue serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
