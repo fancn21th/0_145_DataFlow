@@ -1,4 +1,8 @@
 <script>
+/**
+ *  在这个demo中, 我们演示的是基本的 render func 用法
+ *  createElement 参数 是  tag/component ref,  属性, 内容/ children
+ */
 import Button from "./Button";
 
 export default {

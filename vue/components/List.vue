@@ -1,4 +1,8 @@
 <script>
+/**
+ *  在这个demo中, 我们演示的是 子节点的渲染和slot渲染的问题
+ */
+
 export default {
   props: {
     contacts: {
