@@ -9,6 +9,9 @@ export default {
   render(h) {
     return h("div", {}, [
       h("h2", {}, "姓名列表:"),
+      this.$scopedSlots.default({
+        count: this.contacts.length,
+      }),
       h(
         "ul",
         {

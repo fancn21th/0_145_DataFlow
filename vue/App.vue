@@ -4,7 +4,11 @@
     <hr />
     <Bar />
     <hr />
-    <List :contacts="contacts" />
+    <List :contacts="contacts">
+      <template #default="{ count }">
+        <h3>有{{ count }}个小伙伴在这个姓名组里面</h3>
+      </template>
+    </List>
   </div>
 </template>
 
