@@ -7,25 +7,28 @@ export default {
     },
   },
   render(h) {
-    return h(
-      "ul",
-      {
-        attrs: {
-          class: "name-list",
-        },
-      },
-      this.contacts.map((contact) => {
-        return h(
-          "li",
-          {
-            attrs: {
-              class: "name",
-            },
+    return h("div", {}, [
+      h("h2", {}, "姓名列表:"),
+      h(
+        "ul",
+        {
+          attrs: {
+            class: "name-list",
           },
-          `${contact.name.first} ${contact.name.last}`
-        );
-      })
-    );
+        },
+        this.contacts.map((contact) => {
+          return h(
+            "li",
+            {
+              attrs: {
+                class: "name",
+              },
+            },
+            `${contact.name.first} ${contact.name.last}`
+          );
+        })
+      ),
+    ]);
   },
 };
 </script>
